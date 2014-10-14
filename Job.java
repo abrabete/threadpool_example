@@ -1,5 +1,6 @@
 public class Job implements Runnable {
-    private int jobNumber;
+    //the counter of jobs
+    protected int jobNumber;
     
     Job(int jobName) {
         this.jobNumber = jobNumber;
@@ -12,6 +13,7 @@ public class Job implements Runnable {
                   
         try {
             Thread.sleep((int)(1000));
+            System.out.println("Hello");
         } catch (InterruptedException e) {
             //no cathing as example should not experience interruptions
         }
